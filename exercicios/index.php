@@ -10,7 +10,7 @@
 
 	//sempre inicia-se uma variável com $
 	
-	$nome1 = "Luis";
+	$nome1 = "Luiz";
 	$nome2 = "Paulo";
 	$texto2 = "unoesc";
 	echo $nome1. " e ". $nome2. " são grandes amigos";

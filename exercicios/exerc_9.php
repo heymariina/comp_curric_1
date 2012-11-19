@@ -2,9 +2,7 @@
 <form action="formulario.php" method="POST">
 <fieldset>
 <legend>Formulario de contato</legend>
-
-
-
+</fieldset>
 <div class="formulario">
 <p>
 Nome: <input id="nome"	/>
@@ -28,8 +26,6 @@ Endereço: <input id="Endereço" />
 <div class="formulario">
 <p>
 Mensagem: <input id="mensagem" />
-
-</fieldset>
 </p>
 </div>
 <button class ="btn btn-primary"> Enviar Informações</button>
