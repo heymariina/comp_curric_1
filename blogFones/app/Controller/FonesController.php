@@ -1,6 +1,6 @@
 <?php
 	/**
-	* classe Controlador alunos
+	* classe Controlador
 	*/
 	class FonesController extends AppController{
 		public $helpers = array ('Html','Form');
