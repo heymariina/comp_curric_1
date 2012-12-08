@@ -22,6 +22,7 @@
 			<th colspan="3">Ações</th>
 		</tr>
 	</thead>
+
 	<tbody>
 		<?php foreach ($posts as $post): ?>
 			<tr>
@@ -42,16 +43,15 @@
 						 $post["Post"]["id"]), array('class' => 'btn btn-info'));?>
 				</td>
 				<td>
-					<a class="btn btn-danger" href="#"><i class="icon-trash"></i>Remover</a>
+					<i class="icon-trash"></i>
 					
-					<?php echo $this->Form->postLink('Remover',array('controller' => 'delete', $post['Post']['id']), array('confirm' => 'Realmente deseja remover este item?'));?>
-        		
-        		
+					<?php echo $this->Form->postLink("Remover",
+					array('controller' => 'posts', 'action' => 'delete',
+					$post["Post"]["id"]),
+					array('class' => 'btn btn-danger')); 
+				?> 
         		</td>
 			</tr>
-			
-			
-			
 		<?php endforeach ?>
 	</tbody>
 </table>

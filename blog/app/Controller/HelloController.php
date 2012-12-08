@@ -2,7 +2,7 @@
 class HelloController extends AppController {
 
 	public function index() {
-		$nomeCompleto = "Carli Taffarel";
+		$nomeCompleto = "Wilian Moraes";
 		//enviando o conteudo da variavel para view
 		$this->set('nome', $nomeCompleto);
 	}

@@ -173,6 +173,9 @@ class UsersController extends AppController
     }
   }
 
+public function index() {
+        $this->redirect(array('controller' => 'posts', 'action' => 'index'));
+  }
 
   /**
   * Email form to inform the process of remembering the password.

@@ -1,5 +1,5 @@
 <?php echo $this->Session->flash() ?>
-<h2><?php echo __('Register') ?></h2>
+
 <hr>
 <div class="row-fluid">
 	<div class="span4">

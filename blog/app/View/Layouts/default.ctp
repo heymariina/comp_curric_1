@@ -50,8 +50,8 @@
                         <?php echo $this->Html->link('Home',array('controller' => 'users','action' => 'home')) ?>
                       </li>
                       <?php } ?>
-                      <li class="<?php echo $this->action == 'register' ? 'active' : ''; ?>">
-                        <?php echo $this->Html->link(__('Register'),array('controller' => 'users','action' => 'register')) ?>
+                      <li class="<?php echo $this->action == 'Posts' ? 'active' : ''; ?>">
+                        <?php echo $this->Html->link(__('Posts'),array('controller' => 'users','action' => 'index')) ?>
                       </li>
 
 
