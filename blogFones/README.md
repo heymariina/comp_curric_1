@@ -27,21 +27,24 @@ CakeStrap is a simple HTML5 Ready Bootstrap for CakePHP 2.2 Applications.
 
 ## Quick start
 
-- Create a table named `users` in your database with the following structure:
+- Create a table named `fones` in your database with the following structure:
 
 
-<pre>CREATE TABLE `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `role` varchar(20) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  `hash_change_password` varchar(255) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+<pre>CREATE TABLE fones (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Marca VARCHAR(50),
+    Modelo VARCHAR(50),
+    tipo TEXT,
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
+);
+
+INSERT INTO fones (Marca, Modelo,tipo, created)
+    VALUES ('Sony', 'Modelo a2', 'Headset', NOW());
+INSERT INTO fones (Marca, Modelo, tipo, created)
+    VALUES ('Philips', 'Modelo a5', 'Headset', NOW());
+INSERT INTO fones (Marca, Modelo, tipo, created)
+    VALUES ('Sony', 'Modelo h567', 'AB', NOW());
 </pre>
 
 
